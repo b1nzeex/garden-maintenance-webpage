@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "Dosis";
+  src: url("assets/Dosis.ttf");
+}
+
+body {
+  background-color: #f1f1f1;
+  margin: 0;
+}
+
+.container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+  Mobile Container
+*/
+@media only screen and (max-width: 726px) {
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+/*
+  Navigation Bar
+*/
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #758b67;
+}
+
+.navbar-branding {
+  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  color: #758b67;
+  position: relative;
+  left: 20px;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  position: relative;
+  right: 20px;
+}
+
+.links ul li {
+  margin-left: 20px;
+}
+
+.links ul li:active,
+.links ul li:hover {
+  position: relative;
+  bottom: 5px;
+  font-weight: bold;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #758b67;
+  font-family: "Dosis", Arial, Helvetica, sans-serif;
+}
+
+/*
+  Garden Header
+*/
+.garden-landscape {
+  margin-top: 8px;
+  position: relative;
+}
+
+.garden-landscape img {
+  width: 100%;
+  height: 450px;
+}
+
+.garden-landscape-controls {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.garden-landscape-controls button {
+  color: white;
+  background-color: black;
+  border: none;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.garden-landscape-controls button:hover,
+.garden-landscape-controls button:active {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/*
+  Mobile Garden Header
+*/
+@media only screen and (max-width: 726px) {
+  .garden-landscape img {
+    padding: 0;
+  }
+}
+
+/*
+  Footer
+*/
+.footer {
+  background-color: #758b67;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.social {
+  display: flex;
+}
+
+.social a {
+  text-decoration: none;
+  color: white;
+  margin-left: 40px;
+}
+
+.copyright {
+  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/*
+  About Section
+*/
+.about {
+  text-align: center;
+}
+
+.about h3 {
+  color: #758b67;
+  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  border-bottom: 3px solid #758b67;
+  margin: 0;
+}
+
+.about p {
+  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+/*
+  Mobile About Section
+*/
+@media only screen and (max-width: 726px) {
+  .about {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/*
+  Contact
+*/
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+}
+
+.contact-form {
+  background-color: #758b67;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-form .feedback {
+  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  margin: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid gray;
+}
+
+.contact-form button {
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.contact-form button:hover,
+.contact-form button:active {
+  opacity: 0.9;
+}
+
+.contact-information {
+  position: relative;
+  left: 20px;
+}
+
+.contact-information h3 {
+  color: #758b67;
+  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  border-bottom: 3px solid #758b67;
+  font-size: 2em;
+  margin: 0;
+}
+
+.contact-information p {
+  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+/*
+  Mobile Contact
+*/
+@media only screen and (max-width: 726px) {
+  .contact {
+    display: block;
+    padding: 0;
+  }
+
+  .contact-information {
+    position: unset;
+    margin-top: 10px;
+  }
+}

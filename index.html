@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Garden Maintenance</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="navbar-branding">
+        <h3>Garden Maintenance</h3>
+      </div>
+
+      <div class="links">
+        <!-- <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul> -->
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Garden Header Image -->
+      <div class="garden-landscape">
+        <div class="garden-landscape-controls">
+          <button id="slideshowLeft">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <button id="slideshowRight">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <img
+          id="slideshowImage"
+          src="assets/garden1.jpg"
+          alt="A picture of a beautiful garden"
+        />
+      </div>
+
+      <!-- About -->
+      <div class="about">
+        <h3>Who Are We?</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Reprehenderit illum voluptatibus aperiam eius, corporis suscipit
+          facilis esse, dolor id modi repudiandae, ea necessitatibus eos
+          provident temporibus! Aperiam, vel? Quia iusto sint corporis similique
+          dignissimos! Eius ex unde modi totam molestias cum dolore possimus!
+          Fugiat pariatur assumenda, nihil quos inventore quisquam.
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div class="contact">
+        <form class="contact-form">
+          <p hidden class="feedback" id="feedback"></p>
+
+          <input id="name" name="name" type="text" placeholder="Your name" />
+
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Your email"
+          />
+
+          <input
+            id="phone"
+            name="phone"
+            type="phone"
+            placeholder="Your phone number"
+          />
+
+          <textarea
+            id="query"
+            name="query"
+            rows="5"
+            placeholder="How can I help you?"
+          ></textarea>
+
+          <button type="submit" id="submit">Submit</button>
+        </form>
+
+        <div class="contact-information">
+          <h3>Get In Touch</h3>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+            itaque numquam unde aperiam vel laboriosam illum ducimus quis ullam
+            officia?
+          </p>
+
+          <p><strong>Email</strong> someone@domain.com</p>
+          <p><strong>Phone</strong> +44 8888 888888</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="copyright">Copyright &copy; 2022 - Connor Beach</div>
+
+      <div class="social">
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>
